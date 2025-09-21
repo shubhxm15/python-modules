@@ -3,10 +3,10 @@ import face_recognition
 from face_rec import SimpleFaceRec
 
 sfr = SimpleFaceRec()
-sfr.load_encoding_images("images/") 
+sfr.load_encoding_images("opencv\images") 
 
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
